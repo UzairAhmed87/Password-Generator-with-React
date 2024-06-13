@@ -31,15 +31,15 @@ function App() {
   },[password])
   return (
     <>
-      <div className="w-full max-w-md rounded-lg p-5 my-8 bg-gray-500 mx-auto text-center">
-        <h1 className="text-2xl inline-block text-white text-center  rounded-xl my-3">
+      <div className="w-full max-w-lg rounded-lg p-5 my-8 bg-gray-500 mx-auto text-center">
+        <h1 className="text-3xl inline-block text-white text-center  rounded-xl my-3">
           Password Generator
         </h1>
-        <div className=" flex text-lg shadow rounded-lg overflow-hidden mb-4">
+        <div className=" flex text-xl shadow rounded-lg overflow-hidden font-semibold mb-4">
           <input
             type="text"
             value={password}
-            className="outline-none w-full py-1 px-3 text-orange-600"
+            className="outline-none w-full py-2 px-3 text-orange-600 "
             placeholder="Password"
             ref={passwordRef}
             readOnly
@@ -48,7 +48,7 @@ function App() {
             Copy
           </button>
         </div>
-        <div className="flex text-md gap-x-2 text-orange-600 flex-wrap">
+        <div className="flex text-lg gap-x-2 text-orange-600 flex-wrap font-semibold">
           <div className="flex items-center gap-x-1">
             <input
               type="range"
